@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(180deg, rgb(68, 72, 255) 0%, rgb(33, 212, 253) 100%);
+  font-family: "Audiowide";
+  font-size: 16px;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: -4%;
+  width: 80%;
+  height: 1200px;
+  background: none;
+}
+.outter-part{
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  left: 10%;
+  top: 5%;
+  background: #2d1444;
+  border-radius: 25px;
+  z-index: 2;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
+  
+}
+.circle-1, .circle-2, .circle-3{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: 3%;
+  border-radius: 50%;
+  z-index: 2;
+}
+.circle-1{
+    left: 5%;
+    background: #00bdec;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.circle-2{
+    left: 9%;
+    background: #E84A5F;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+.circle-3{
+    left: 13%;
+    background: #F26B38;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+@keyframes neon{
+  from {
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to {
+    filter: drop-shadow(0 0 30px var(--cor-neon));
+  }
+}
+
+.circle-1{
+  animation: neon 1s alternate infinite ease-in-out;
+}
+.circle-1{
+  --cor-neon:  #00bdec;
+}
+.circle-2{
+  animation: neon 1s alternate infinite ease-in-out;
+}
+.circle-2{
+  --cor-neon: #E84A5F;
+} 
+.circle-3{
+  animation: neon 1s alternate infinite ease-in-out;
+}
+.circle-3{
+  --cor-neon:  #F26B38;
+} 
+
+.part-1{
+  position: absolute;
+  width: 20%;
+  height: 15%;
+  left: 40%;
+  bottom: -15%;
+  background: #8438c7;
+  -webkit-clip-path: polygon(18% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(18% 0%, 80% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+.part-2{
+  position: absolute;
+  width: 40%;
+  height: 10%;
+  left: 30%;
+  bottom: -25%;
+  background: #2d1444;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+.inner-part{
+  position: absolute;
+  width: 95%;
+  height: 85%;
+  left: 2.5%;
+  top: 5%;
+  background: #1d1e22;
+  z-index: 2;
+}
+.gif-part{
+  margin-top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  border-radius: 0px;
+  z-index: 2;
+}
+
+
+
+
+.speaker-form-header {
+  color:  #fff;
+  text-align: center;
+  margin: 0px;
+  padding: 40px;
+}
+.speaker-form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.speaker-form {
+  color: #1d1e22;
+  background-color: #d4d4dc;
+  margin-top: 0px;
+  position: absolute;
+  width: 99.99%;
+  height: 99.99%;
+  left: 0%;
+  top: 0%;
+  border-radius: 0px;
+  padding: 50px;
+}
+
+.form-row {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}.form-row-info {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   flex-wrap: wrap;
+ }
+
+.form-row input[type='text'], input[type='email'], input[type='password']{
+  background-color: #FFFFFF;
+  border: 8px solid #d4d4dc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
+  border-radius: 3px;
+  width: 75%;
+  padding: 7px;
+  margin-left: 12%;
+  font-family: 'Arial Black',cursive;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.form-info{
+  text-align: center;
+  -moz-text-align-last: center;
+  -webkit-align-content: center;
+  color: #1d1e22;
+  background-color: #d4d4dc;
+  margin-top: 0px;
+  position: absolute;
+  width: 99.99%;
+  height: 99.99%;
+  left: 0%;
+  top: 0%;
+  border-radius: 0px;
+  padding: 0 30px 30px;
+}
+.button {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  color: #D6D9DC;
+  background-color: #8438c7;
+  margin: 10px 38%;
+
+  border: 10px solid #d4d4dc;
+  box-shadow: 0px 0px 5px rgba(0,0,0,1);
+  border-radius: 10px;
+
+  padding: 15px 40px;
+  cursor: pointer;
+}
+.button:hover {
+  color: #8438c7;
+  background-color: #d4d4dc;
+  transition: .5s;
+}
+
+.btn-info {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #8438c7;
+  margin: 15px 0 0;
+  border: 10px solid #d4d4dc;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
+  border-radius: 10px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+.btn-info:hover {
+  color: #8438c7;
+  background-color: #d4d4dc;
+  transition: .5s;
+}
+.texta-info{
+  display: block;
+  height: 100px;
+  width: 75%;
+  resize: none;
+  position: relative;
+  background-color: #FFFFFF;
+  border: 8px solid #d4d4dc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
+  border-radius: 3px;
+  padding: 5px;
+  font-family: "Arial Narrow", cursive;
+  font-size: 16px;
+  margin:0 auto;
+}
+strong{
+  color: #8438c7;
+}
+
+.cad{
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #1d1e22;
+  display: block;
+  position: relative;
+  padding: 10px;
+}
+#aspa-frase{
+  color: #FFFFFF;
+  font-family: 'Calibra', cursive;
+  font-size: 100px;
+  position: relative;
+  top: 33px;
+  left: -16px;
+  opacity: .6;
+}
+#p-frase{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 25px;
+}
+#h1-contato{
+  position: relative;
+  top: 40px;
+}
+
+.buttonback {
+  transition: .5s;
+  position: fixed;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #8438c7;
+  margin: 20px;
+  right: 5px;
+  border: 10px solid  #8438c7;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
+  border-radius: 60px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.buttonback a{
+  transition: .8s;
+  color: #fff;
+  font-weight:bold;
+  font-size:14px;
+  text-align: center;
+  text-decoration:none;
+  display:block;
+  position:relative;
+}
+.buttonback:hover{
+  transition: .8s;
+  background-color: #d4d4d4;
+}
+
+.article-image {
+  background-color: #B2D6FF;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
+  border: 10px solid #d4d4d4;
+  border-radius: 20%;
+  margin: 10px auto;
+  width: 250px;
+  height: 180px;
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<?php
+
+session_start();
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon 2x" type="image/x-png" href="img/loja.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyBazz Easy</title>
+    <link rel="stylesheet" href="login/css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+
+<body>
+<div class="buttonback" title="Voltar">
+	<a href="index.html"><i class="fas fa-2x fa-sign-out-alt"></i></a>
+</div>
+<header class='speaker-form-header'>
+    <h1 id="h1-contato">Contato</h1>
+    <p id="p-frase"><em><strong id="aspa-frase">"</strong> Saber o que você pensa hoje, é o caminho para melhorar o seu Amanhã!</em></p>
+
+</header>
+
+<div class="box">
+    <div class="outter-part">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="inner-part">
+        <div class="gif-part">
+            <form id="form-info" class="form-info" method="POST" action="">
+                <div class="form-row form-row-info">
+                    <label for='full-name'>Nome e Sobre Nome</label>
+                    <input id="full-name" type="text" placeholder="Digite seu Nome!" name='full-name'>
+                </div>
+                <div class="form-row form-row-info">
+                    <label for='email'>Email</label>
+                    <input id="email" type="email" placeholder="Digite seu Email" name="full-name">
+                </div>
+                <div class="form-row form-row-info">
+                    <label for="info">Como podemos lhe ajudar Hoje?</label>
+                    <textarea id="info" class="texta-info"></textarea>
+                </div>
+                
+                <img src='img/contato.gif' class='article-image'/>
+                <br>
+                <input class="btn-info" type="submit" name=" btnLogin" value="ENVIAR">
+                <a class="cad" href="index.html#rodape">Outros meios de Contato<strong> Mande seu feedback!</strong></a>
+            </form>
+        </div>
+        </div>
+        <div class="part-1"></div>
+        <div class="part-2"></div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

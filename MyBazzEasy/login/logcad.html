@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MyBazz Easy</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Serif|Poppins'>
+		<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header id="hdrlogcad">
+    <div id="btn-back">
+		<a href="../index.html"><img id="img-btn-back" src="../img/seta-esquerda.png"></a>
+    </div>
+</header>
+<div id="app" class="base">
+	<div v-if="signUp">
+		<div class="aim">
+			<h2>Quer explorar mais?</h2>
+			<h6>Preencha seus dados e comece a passear conosco.</h6>
+			<button @click="signUp = !signUp" class="btn ">Cadstrar</button>
+		</div>
+		<div class="formArea">
+			<h2>Bem-Vindo ao MyBazz Easy!</h2>
+			<div>
+				<div class="form-group">
+					<input type="email" class="form-control" id="email-log" aria-describedby="emailHelp" placeholder="Seu email">
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="senha-log" placeholder="Senha">
+			</div>
+
+			<button class="btn">Entrar</button>
+		</div>
+	</div>
+
+	<div v-else>
+		<div class="aim in">
+			<h2>Bem-Vindo de volta!</h2>
+			<h6>Está pronto para entrar neste Grande Shopping?</h6>
+			<button @click="signUp = !signUp" class="btn">Entrar</button>
+		</div>
+		<div class="formArea in">
+			<h2>Cadastro</h2>
+			<div class="divgrade">
+				<div class="form-group esquerda">
+					<input type="text" class="form-control" id="nome" placeholder="Primeiro Nome">
+				</div>
+				<div class="form-group direita">
+					<input type="text" class="form-control" id="snome" placeholder="Último Nome">
+				</div>
+			</div>
+			<div class="divgrade">
+				<div class="form-group esquerda">
+					<input type="date" class="form-control" id="datanascimento" placeholder="Data de Nascimento">
+				</div>
+				<div class="form-group direita">
+					<select id="sexo">
+						<option value="0" label="Sexo"></option>
+						<option value="F">Feminino</option>
+						<option value="M">Masculino</option>
+						<option value="O">Outros</option>
+					</select>
+				</div>
+			</div>
+			<div class="divgrade">
+				<div class="form-group esquerda">
+					<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email">
+				</div>
+				<div class="form-group direita">
+					<input type="email" class="form-control" id="c-email" aria-describedby="emailHelp" placeholder="Confirme seu email">
+				</div>
+			</div>
+			<div class="divgrade">
+				<div class="form-group esquerda">
+					<input type="password" class="form-control" id="senha" placeholder="Senha">
+				</div>
+				<div class="form-group direita">
+					<input type="password" class="form-control" id="c-senha" placeholder="Confirme sua Senha">
+				</div>
+			</div>
+			<button class="btn">Cadastrar</button>
+		</div>
+
+	</div>
+</div>
+<script src='https://cdn.jsdelivr.net/npm/vue'></script>
+<script  src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+
+
+
+/*---------------*/
+
+.ellipse-container {
+	width: 50rem;
+	height: 50rem;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: 0rem;
+	border: 20px solid #4925b1;
+	background-image: url('../img/Fundo4.png');
+	background-size: 100%;
+	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.ellipse-container .greeting {
+	color: #8438c7;
+	position: relative;
+	top: 20rem;
+	left: 1.9rem;
+	right: 0;
+	margin: 0 auto;
+	text-transform: uppercase;
+	letter-spacing: 4rem;
+	font-size: 4.4rem;
+	font-weight: 600;
+	
+}
+
+.ellipse-container .greeting:after {
+	/*content:'';*/
+	width: .3rem;
+	height: .3rem;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #fff;
+	position: relative;
+	top: -0.65rem;
+	left: -5.05rem;
+}
+
+.ellipse {
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	border-style: solid;
+
+}
+
+.ellipse__outer--thin {
+	width: 100%;
+	height: 100%;
+	border-width: 1px;
+	border-color: rgb(132, 56, 199);
+	animation: ellipseOrbit 15s ease-in-out infinite;
+}
+
+.ellipse__outer--thin:after {
+	content: "";
+	background-image: url(../img/ellipse-azul.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	opacity: .5;
+}
+
+.ellipse__outer--thick {
+	width: 99.9%;
+	height: 99.9%;
+	border-color: #8438c7 transparent;
+	border-width: 5px;
+	transform: rotate(-45deg);
+	animation: ellipseRotate 15s ease-in-out infinite;
+	z-index: 1;
+}
+
+.ellipse__orbit {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-width: 3px;
+	border-color: #8438c7;
+	top: 5rem;
+	right: 6.75rem;
+	z-index: 5;
+	box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.ellipse__orbit:before {
+	content: '';
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #8438c7;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 4;
+	box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+@keyframes ellipseRotate {
+	0% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(-405deg);
+	}
+}
+
+
+@keyframes ellipseOrbit {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
